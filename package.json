@@ -1,0 +1,25 @@
+{
+  "name": "test-calendar",
+  "version": "1.0.0",
+  "description": "Test task for JS Internship program in Ciklum",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlionaN/Calendar.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "javascript",
+    "sass"
+  ],
+  "author": "Novyk Aliona",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlionaN/Calendar/issues"
+  },
+  "homepage": "https://github.com/AlionaN/Calendar#readme"
+}

@@ -1,0 +1,73 @@
+@font-face {
+  font-family: "NotoSans";
+  src: url("../fonts/NotoSansJP-Regular.otf");
+  font-weight: 400;
+  font-display: swap; }
+@font-face {
+  font-family: "NotoSans";
+  src: url("../fonts/NotoSansJP-Black.otf");
+  font-weight: 900;
+  font-display: swap; }
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+body {
+  width: 80%;
+  margin: 2rem auto;
+  font-family: "NotoSans", sans-serif; }
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 2rem; }
+  .header__title {
+    font-weight: 900;
+    font-size: 2rem;
+    text-transform: uppercase; }
+  .header__buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .header__filter {
+    width: 6rem;
+    padding: 0.2rem;
+    border-radius: 0.5rem; }
+  .header__new-event-btn {
+    padding: 0.2rem 2rem;
+    background-color: #1F97FF;
+    border: 2px solid #1F97FF;
+    color: #fff;
+    border-radius: 0.5rem;
+    margin-left: 2rem; }
+    .header__new-event-btn:hover {
+      background-color: #1c7dd3;
+      border: 2px solid #1c7dd3;
+      cursor: pointer; }
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  border-radius: 0.5rem; }
+  .calendar__cell {
+    border: 1px solid #242424;
+    text-align: center; }
+  .calendar .column_title,
+  .calendar .row_title {
+    padding: 0.5rem 0; }
+  .calendar .column_title {
+    background-color: #bbffaa; }
+
+/*# sourceMappingURL=style.css.map */
