@@ -21,7 +21,10 @@ body
 .header
     display: flex
     justify-content: space-between
-    margin-bottom: 2rem
+    margin-bottom: 1rem
+    padding: 1rem
+    border-radius: .5rem
+    box-shadow: -4px -2px 8px 2px #ccc
     &__title
         font-weight: 900
         font-size: 2rem
@@ -30,16 +33,20 @@ body
         display: flex
         align-items: center
     &__filter
-        width: 6rem
-        padding: 0.2rem
+        padding: 0.5rem
         border-radius: .5rem
+        box-shadow: -1px -2px 6px 1px #ccc
+        border: none
+        &:focus
+            outline: none
     &__new-event-btn
-        padding: .2rem 2rem
+        padding: .5rem 2rem
         background-color: #1F97FF
         border: 2px solid #1F97FF
         color: #fff
         border-radius: .5rem
         margin-left: 2rem
+        box-shadow: -1px -2px 6px 1px #ccc
         &:hover
             background-color: #1c7dd3
             border: 2px solid #1c7dd3
@@ -51,9 +58,31 @@ body
     grid-column-gap: 0
     grid-row-gap: 0
     border-radius: .5rem
+    box-shadow: -4px -2px 8px 2px #ccc
     &__cell
-        border: 1px solid #242424
+        border: 1px solid #dbdbdb
         text-align: center
+        &:nth-child(1)
+            border-top-left-radius: .5rem
+        &:nth-child(6)
+            border-top-right-radius: .5rem
+        &:nth-child(55)
+            border-bottom-left-radius: .5rem
+        &:nth-child(60)
+            border-bottom-right-radius: .5rem
+        .event
+            width: 100%
+            height: 100%
+            display: flex
+            align-items: center
+            justify-content: space-around
+            background-color: #1a2a85
+            color: #d8d8d8
+        .cross
+            &:hover
+                cursor: pointer   
+        .cross::before
+            content: '✕'
     .column_title,
     .row_title
         padding: .5rem 0
