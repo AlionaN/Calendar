@@ -8,6 +8,10 @@
     src: url('../fonts/NotoSansJP-Black.otf')
     font-weight: 900
     font-display: swap
+$blocks-shadow: -4px -2px 8px 2px #ccc
+$element-shadow: -1px -2px 6px 1px #ccc
+$btn-back-color: #1F97FF
+$btn-hover-back-color: #1c7dd3
 
 *
     box-sizing: border-box
@@ -17,14 +21,13 @@ body
     width: 80%
     margin: 2rem auto
     font-family: 'NotoSans', sans-serif
-
 .header
     display: flex
     justify-content: space-between
     margin-bottom: 1rem
     padding: 1rem
     border-radius: .5rem
-    box-shadow: -4px -2px 8px 2px #ccc
+    box-shadow: $blocks-shadow
     &__title
         font-weight: 900
         font-size: 2rem
@@ -35,21 +38,21 @@ body
     &__filter
         padding: 0.5rem
         border-radius: .5rem
-        box-shadow: -1px -2px 6px 1px #ccc
+        box-shadow: $element-shadow
         border: none
         &:focus
             outline: none
     &__new-event-btn
         padding: .5rem 2rem
-        background-color: #1F97FF
-        border: 2px solid #1F97FF
+        background-color: $btn-back-color
+        border: 2px solid $btn-back-color
         color: #fff
         border-radius: .5rem
         margin-left: 2rem
-        box-shadow: -1px -2px 6px 1px #ccc
+        box-shadow: $element-shadow
         &:hover
-            background-color: #1c7dd3
-            border: 2px solid #1c7dd3
+            background-color: $btn-hover-back-color
+            border: 2px solid $btn-hover-back-color
             cursor: pointer
 .calendar
     display: grid
@@ -58,7 +61,7 @@ body
     grid-column-gap: 0
     grid-row-gap: 0
     border-radius: .5rem
-    box-shadow: -4px -2px 8px 2px #ccc
+    box-shadow: $blocks-shadow
     &__cell
         border: 1px solid #dbdbdb
         text-align: center
@@ -88,3 +91,67 @@ body
         padding: .5rem 0
     .column_title
         background-color: #bbffaa
+.newevent
+    display: flex
+    flex-direction: column
+    padding: 2rem
+    box-shadow: $blocks-shadow
+    width: 50%
+    margin: 0 auto
+    border-radius: .5rem
+    &__label 
+        display: flex
+        justify-content: space-between
+    &__label + &__label
+        margin-top: 2rem
+    &__note
+        color: #ccc
+        font-size: .9rem
+    &__input, &__option
+        width: 40%
+        border: none
+        box-shadow: $element-shadow
+        border-radius: .5rem
+        padding: .5rem
+    &__memb-select input
+        margin-right: 0.5rem
+    &__btns
+        border: none
+        display: flex
+        justify-content: flex-end
+        margin-top: 2rem
+        button + button
+            margin-left: 1rem
+    &__cancel, &__submit
+        border: none
+        padding: .5rem 2rem
+        border-radius: .5rem
+    &__cancel
+        background-color: #ccc
+        &:hover
+            cursor: pointer
+    &__submit
+        background-color: $btn-back-color
+        color: #fff
+        &:hover
+            cursor: pointer
+            background-color: $btn-hover-back-color
+.error
+    display: none
+    background-color: #ffaaaa
+    color: #a30000
+    align-items: center
+    padding: 1rem
+    margin-bottom: 2rem
+    transition: all .5s
+    &__icon
+        color: #ffaaaa
+        background-color: #a30000
+        border-radius: 50%
+        padding: .3rem .4rem
+        line-height: 1
+        margin-right: 1rem
+.show-flex
+    display: flex
+.hide
+    display: none

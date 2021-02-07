@@ -24,5 +24,6 @@
   "homepage": "https://github.com/AlionaN/Calendar#readme",
   "dependencies": {
     "json-server": "^0.16.3"
-  }
+  },
+  "devDependencies": {}
 }

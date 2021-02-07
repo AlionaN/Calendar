@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Event</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form action="#" class="newevent">
+        <div class="error">
+            <div class="error__icon">&#10006;</div>
+            <div class="error__text">Failed to create an event. Time slot is already booked</div>
+        </div>
+        <label class="newevent__label newevent__name-label" for="event-name">Name of the event:
+        <input class="newevent__input newevent__name-input" type="text" name="name" id="event-name"></label>
+
+        <label class="newevent__label newevent__memb-label" for="participants"><div class="newevent__text">
+            Participants:
+            <div class="newevent__note">Hold CTRL for the multiple selection</div>
+        </div> 
+        <select class="newevent__option newevent__memb-select" name="participants" id="participants" multiple></select></label>
+
+        <label class="newevent__label newevent__day-label" for="day">Day:
+        <select class="newevent__option newevent__day-select" name="day" id="day">
+            <option value="mon">Monday</option>
+            <option value="tue">Tuesday</option>
+            <option value="wed">Wednesday</option>
+            <option value="thu">Thursday</option>
+            <option value="fri">Friday</option>
+        </select></label>
+
+        <label class="newevent__label newevent__time-label" for="time">Time:
+        <select class="newevent__option newevent__time-select" name="time" id="time">
+            <option value="10">10:00</option>
+            <option value="11">11:00</option>
+            <option value="12">12:00</option>
+            <option value="13">13:00</option>
+            <option value="14">14:00</option>
+            <option value="15">15:00</option>
+            <option value="16">16:00</option>
+            <option value="17">17:00</option>
+            <option value="18">18:00</option>
+        </select></label>
+        <fieldset class="newevent__btns">
+            <button class="newevent__cancel">Cancel</button>
+            <button class="newevent__submit" type="submit">Create</button>
+        </fieldset>
+    </form>
+    <script src="js/script.js"></script>
+</body>
+</html>

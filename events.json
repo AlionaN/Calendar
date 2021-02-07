@@ -1,25 +1,25 @@
 {
-    "events": [
-        {
-            "id": 1,
-            "name": "Daily Standup",
-            "participants": ["Maria", "Sergey", "Aliona", "Oleg"],
-            "day": "mon",
-            "time": 11
-        },
-        {
-            "id": 2,
-            "name": "Planning session",
-            "participants": ["Maria", "Aliona", "Oleg"],
-            "day": "wed",
-            "time": 16
-        },
-        {
-            "id": 3,
-            "name": "Perspective",
-            "participants": ["Aliona", "Oleg", "Boryslav"],
-            "day": "fri",
-            "time": 15
-        }
-    ]
+  "events": [
+    {
+      "id": 1,
+      "name": "Daily Standup",
+      "participants": "Maria,Sergey,Aliona,Oleg",
+      "day": "mon",
+      "time": 11
+    },
+    {
+      "id": 2,
+      "name": "Planning session",
+      "participants": "Maria,Aliona,Oleg",
+      "day": "wed",
+      "time": 16
+    },
+    {
+      "id": 3,
+      "name": "Retrospective",
+      "participants": "Aliona,Oleg,Boryslav",
+      "day": "fri",
+      "time": 15
+    }
+  ]
 }
