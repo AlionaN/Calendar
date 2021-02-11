@@ -12,7 +12,7 @@
       "name": "Planning session",
       "participants": "Maria,Aliona,Oleg",
       "day": "wed",
-      "time": 16
+      "time": "17"
     },
     {
       "id": 3,
@@ -25,7 +25,7 @@
       "id": 4,
       "name": "Test Event",
       "participants": "Aliona,Oleg,Boryslav",
-      "day": "wed",
+      "day": "tue",
       "time": "10"
     }
   ]
